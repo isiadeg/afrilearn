@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href="/">
+<meta charset="utf-8">
+<title>Afri Learn | The Digital Classroom </title>
+<link href="newsdesign.css" rel="stylesheet" type="text/css">
+<meta name="keyword" content="Online Class, Digital Classroom, Online School, Online Coaching, Online Tutorial " >
+<meta name="description" content=" Learn at Your Own Pace and at Your Own Place With Afrilearn; The Online School for Every Category ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:url"           content="" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Online School" />
+  <meta property="og:description"   content=" Learn at Your Own Pace and at Your Own Place With Afrilearn; The Online School for Every Category " />
+  <meta property="og:image"         content="https://functions-news.web.app/assets/protesters.jpg"  />
+  <meta property="og:image:width"          content="600px" />
+    <meta property="og:image:height"          content="600px" />
+    <meta property="fb:app-id" content="344569333015691"/>
+
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT Sans" rel="stylesheet">
+
+<style>
+body{
+
+font-size: 100%;
+margin: 0;
+padding:0;
+outline: 0;
+
+}
+
+td, th{
+ border: 2px solid #bbb;
+ border-collapse: collapse;
+}
+
+td img{
+max-width: 50%;
+height: auto;
+
+}
+th, td{
+ padding: 10px;
+ text-align: center;
+}
+</style>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '344569333015691',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+<link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
+
+<body>
+
+
+<app-root></app-root>
+
+
+<script src="/assets/jquery.js"></script>
+
+
+<script>
+
+
+
+  // Your web app's Fi
+  // Initialize Fireb
+
+
+
+
+displaysmall=()=>{
+  $('.togglesearch').toggleClass("togglesearch");
+  $('header').find('.fa-search').css("display", "none");
+  $('.togglesearch').toggleClass("togglesearch");
+}
+closesmall=()=>{
+  $('.close').toggleClass("togglesearch");
+    $('.flexdisplay').toggleClass("togglesearch");
+  $('header').find('.fa-search').css("display", "block");
+}
+expand =()=>{
+
+document.getElementById("dropdown-wrapper").style.display="block";
+ document.getElementById("main-news").className += " shift";
+}
+closedropdown=()=>{
+document.getElementById("dropdown-wrapper").style.display="none";
+document.getElementById("main-news").className ="main-news";
+}
+
+
+changeplaceholder=()=>{
+  let determinant = $("#filter").val();
+ console.log(determinant);
+  switch(determinant){
+  case 'date': $("#searchword").attr('type','date');
+  break;
+  case 'keywords':  $("#searchword").attr('placeholder','Enter Your Search Terms');
+$("#searchword").attr('type','text');
+  break;
+  case 'country':  $("#searchword").attr('placeholder','Enter Your Country');
+$("#searchword").attr('type','text');
+  break;
+  default: ;
+  break;
+
+
+  }
+  }
+  $( document ).ready(function() {
+      console.log( "ready!" );
+
+
+})
+expanding=()=>{
+  console.log('clicked');
+ $('.noborder').toggleClass('display');
+ if($('.toright').find('.fa-angle-right').length == 1){
+   $('.toright').html('<i class="fas fa-angle-down" onclick="expanding();"></i>');}else{
+     $('.toright').html(`<i class="fas fa-angle-right" onclick="expanding();"></i>`);
+   }}
+
+//  })
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+let headerclasses=document.getElementById("header").className;
+console.log(headerclasses);
+let isboxshadow = headerclasses.search('boxshadow');
+var bar = document.getElementsByClassName("bar");
+var barclasses = bar[0].className;
+
+if( barclasses.includes("yellow")){
+console.log("yellow");
+for (let i=0; i<bar.length; i++ ){
+  bar[i].className = bar[i].className.replace(/\byellow\b/g, "black")
+}}
+var header = document.getElementById("header");
+var a = header.getElementsByTagName("a");
+var aclasses = a[0].className;
+if(aclasses.includes("liacolor")){
+  for (let i=0; i<a.length; i++ ){
+    a[i].className = a[i].className.replace(/\bliacolor\b/g, "blackli ");
+  }}
+
+console.log(isboxshadow);
+    if(isboxshadow == -1 ){
+console.log('yes');
+      document.getElementById("header").className += " boxshadow";
+document.getElementById("nav").className=document.getElementById("nav").className.replace(/\bnav1\b/g, "nav2");
+document.getElementById("logo").className=document.getElementById("logo").className.replace(/\bnodisplay\b/g, "displayi");
+document.getElementById("searcharea").className=document.getElementById("searcharea").className.replace(/\bnodisplay\b/g, "display");
+}
+ } else {
+    bar = document.getElementsByClassName("bar");
+    barclasses = bar[0].className;
+
+   if(barclasses.includes("yellow")){}else{
+
+   for (let i=0; i<bar.length; i++ ){
+     bar[i].className += " yellow"
+   }}
+   var header = document.getElementById("header");
+   var a = header.getElementsByTagName("a");
+   var aclasses = a[0].className;
+   if(aclasses.includes("liacolor")){}else{
+     for (let i=0; i<a.length; i++ ){
+       a[i].className += " liacolor";
+       //a[i].className.replace(/\bliacolor\b/g, "liacolor-black");
+     }}
+
+
+  document.getElementById("header").className = "";
+  document.getElementById("nav").className=document.getElementById("nav").className.replace(/\bnav2\b/g, "nav1");
+
+  document.getElementById("searcharea").className=document.getElementById("searcharea").className.replace(/\bdisplay\b/g, "nodisplay");
+
+  document.getElementById("logo").className=document.getElementById("logo").className.replace(/\bdisplayi\b/g, "nodisplay");
+
+
+  }
+}
+
+const displayornot = ()=>{
+  console.log('displayornot');
+let  bigscreennav = document.getElementById('bigscreennav');
+let  dropdown = document.getElementById('dropdown').className;
+let  dropdowngan = document.getElementById('dropdown');
+
+let isdropdown = dropdown.includes("nodisplay");
+console.log(isdropdown);
+  if(isdropdown){
+    console.log(dropdown);
+    document.getElementById('dropdown').className = document.getElementById('dropdown').className.replace(/\bnodisplay\b/g, "display");
+  }else{
+    console.log("falseeee");
+  dropdowngan.className = dropdowngan.className.replace(/\bdisplay\b/g, "nodisplay");
+  }
+}
+closedropdown=()=>{
+document.getElementById("dropdown").style.display="none";
+
+}
+function sharedata(){
+
+	FB.ui({
+		method: 'share',
+ href: 'https://functions-web.web.app',}, function(response){});
+}
+
+
+
+
+
+
+
+  if('serviceWorker' in navigator ){
+    window.addEventListener('load', async ()=>{
+      try{
+    registration = await navigator.serviceWorker.register('seiiir.js')
+
+    console.log(`service worker registered and service worker is ${registration.scope}`);
+}catch(e){
+  console.log(e);
+}})
+
+}else{console.log('no service worker')};
+
+function sharedata(){
+
+	FB.ui({
+		method: 'share',
+ href: 'https://functions-news.web.app',}, function(response){});
+}
+</script>
+
+
+
+<script src="runtime-es2015.c5fa8325f89fc516600b.js" type="module"></script><script src="runtime-es5.c5fa8325f89fc516600b.js" nomodule defer></script><script src="polyfills-es5.3e8196928d184a6e5319.js" nomodule defer></script><script src="polyfills-es2015.5b10b8fd823b6392f1fd.js" type="module"></script><script src="main-es2015.3594f685fa4e5ddaa87f.js" type="module"></script><script src="main-es5.3594f685fa4e5ddaa87f.js" nomodule defer></script></body>
+</html>
